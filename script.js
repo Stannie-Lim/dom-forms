@@ -9,7 +9,12 @@ const list = document.querySelector('ul');
 
 const render = () => {
     const html = customers.map(customer => {
-        return `<li>${customer.name} joined on ${customer.dateJoined}</li>`;
+        const dateOfHire = customer.dateJoined;
+        const date = new Date(dateOfHire);
+        const diff = new Date() - date;
+        const msInYear = 1000*60*60*24*365;
+        const years = (diff / msInYear).toFixed(2);
+        return `<li class='${ customer.isVIP ? 'vip': ''}'>${customer.name} joined on ${customer.dateJoined} and has been a member for ${years} years.</li>`;
     }).join('');
     list.innerHTML = html;
 };

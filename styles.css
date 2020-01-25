@@ -1,7 +1,39 @@
-ul {
-    list-style-type: none;
+body {
+    font-family: sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 li {
+    display: flex;
+    padding: 1rem;
     border: solid 1px black;
+    justify-content: flex-start;
+    background-color: lightgray;
+    margin: 2% 0;
+}
+label {
+    display: flex;
+    padding: 1rem;
+    border: solid 1px black;
+    background-color: lightgray;
+    align-items: center;
+}
+
+.vip {
+   background-color: seaGreen;
+}
+
+.box {
+    background-color: seaGreen;
+    border: solid 1px black;
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+}
+
+.vipbox {
+    width: 200px;
 }
