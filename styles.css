@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -15,17 +14,26 @@ li {
     margin: 2% 0;
 }
 label {
+    display: flexbox;
+    padding: 1rem;
+    border: solid 1px black;
+    justify-content: flex-start;
+    margin: 2% 0;
+    border: solid 1px black;
+    justify-content: flex-start;
+    background-color: lightgray;
+    margin: 2% 0;
+}
+label {
     display: flex;
     padding: 1rem;
     border: solid 1px black;
     background-color: lightgray;
     align-items: center;
 }
-
 .vip {
    background-color: seaGreen;
 }
-
 .box {
     background-color: seaGreen;
     border: solid 1px black;
@@ -33,7 +41,34 @@ label {
     width: 50px;
     margin: 1rem;
 }
-
 .vipbox {
     width: 200px;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    border: solid 1px black;
+    align-items: center;
+    margin: 0 30%;
+}
+form > input {
+    display:flex;
+    margin: 1rem 0;
+    width: 80%;
+    height: 2rem;
+}
+button {
+    display:flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    width: 80%;
+    height: 2rem;
+}
+form > div {
+    display:flex;
+    width: 100%;
+    margin-left: 20%;
+}
+.checkbox {
+    float: left;
 }
